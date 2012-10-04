@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <joined-subclass name="ERP.Domain.Transporter" extends="ERP.Domain.SubEntity.Person">
+    <key column="ID" foreign-key="FK_TRANSPORTER_PERSON"/>
+  </joined-subclass>
+</hibernate-mapping>

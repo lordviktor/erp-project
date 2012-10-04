@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
+  <class name="ERP.Domain.SubEntity.NaturalPersonDetail, ERP.Domain" table="TB_NATURAL_PERSON_DETAIL">
+    <id name="Id">
+      <column name="ID"/>
+      <generator class="guid.comb"/>
+    </id>
+
+    <property name="FirstName" column="FIRST_NAME"/>
+    <property name="LastName" column="LAST_NAME"/>
+
+    <component name="Cpf">
+      <property name="Number" column="CPF_NUMBER"/>
+      <property name="CheckNumber" column="CPF_CHECK_NUMBER"/>
+    </component>
+
+    <property name="Rg" column="RG"/>
+    <property name="BirthDate" column="BIRTH_DATE"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ERP.Dao.Interfaces.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1">
+            <summary>Stub type of ERP.Dao.Interfaces.BaseType.IBaseCrudDao`1</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.#ctor">
+            <summary>Initializes a new instance of type StubIBaseCrudDao</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.DeleteT0">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Delete(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Get(System.Guid)">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Save(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Update(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#VerifyIfAlreadyRegistred(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.FetchAllPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.FetchByCustomCriteriaExpressionOfFuncOfT0Boolean">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.FetchByCustomCriteriaExpressionOfFuncOfT0BooleanPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.GetGuid">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.SaveT0">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.UpdateT0">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.VerifyIfAlreadyRegistredT0">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+        <member name="T:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseDao">
+            <summary>Stub type of ERP.Dao.Interfaces.BaseType.IBaseDao</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseDao.#ctor">
+            <summary>Initializes a new instance of type StubIBaseDao</summary>
+        </member>
+        <member name="T:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1">
+            <summary>Stub type of ERP.Dao.Interfaces.BaseType.IBaseLogicExclusionDao`1</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.#ctor">
+            <summary>Initializes a new instance of type StubIBaseLogicExclusionDao</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.DeleteT0">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Delete(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Get(System.Guid)">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Save(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Update(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#VerifyIfAlreadyRegistred(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.FetchAllPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.FetchByCustomCriteriaExpressionOfFuncOfT0Boolean">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.FetchByCustomCriteriaExpressionOfFuncOfT0BooleanPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.GetGuid">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.SaveT0">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.UpdateT0">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.VerifyIfAlreadyRegistredT0">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+        <member name="T:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1">
+            <summary>Stub type of ERP.Dao.Interfaces.BaseType.IBaseMultiTenancyDao`1</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.#ctor">
+            <summary>Initializes a new instance of type StubIBaseMultiTenancyDao</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.DeleteT0">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Delete(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Get(System.Guid)">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Save(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Update(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#VerifyIfAlreadyRegistred(`0)">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.FetchAllPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.FetchByCustomCriteriaExpressionOfFuncOfT0Boolean">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.FetchByCustomCriteriaExpressionOfFuncOfT0BooleanPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.GetGuid">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.SaveT0">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.UpdateT0">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.VerifyIfAlreadyRegistredT0">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+        <member name="T:ERP.Dao.Interfaces.BaseType.Fakes.StubIDatabaseManager">
+            <summary>Stub type of ERP.Dao.Interfaces.BaseType.IDatabaseManager</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIDatabaseManager.#ctor">
+            <summary>Initializes a new instance of type StubIDatabaseManager</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIDatabaseManager.BuildSessionGuidString">
+            <summary>Sets the stub of IDatabaseManager.BuildSession(Guid company, String connectionString)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIDatabaseManager.erpdi::ERP#Dao#Interfaces#BaseType#IDatabaseManager#BuildSession(System.Guid,System.String)">
+            <summary>Sets the stub of IDatabaseManager.BuildSession(Guid company, String connectionString)</summary>
+        </member>
+        <member name="T:ERP.Dao.Interfaces.Fakes.StubICompanyDao">
+            <summary>Stub type of ERP.Dao.Interfaces.ICompanyDao</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.#ctor">
+            <summary>Initializes a new instance of type StubICompanyDao</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.DeleteCompany">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#Delete(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{ERP.Domain.Company,System.Boolean}},ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{ERP.Domain.Company,System.Boolean}})">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#Get(System.Guid)">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#Save(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#Update(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#VerifyIfAlreadyRegistred(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.FetchAllPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.FetchByCustomCriteriaExpressionOfFuncOfCompanyBoolean">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.FetchByCustomCriteriaExpressionOfFuncOfCompanyBooleanPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.GetGuid">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.SaveCompany">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.UpdateCompany">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.VerifyIfAlreadyRegistredCompany">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+        <member name="T:ERP.Dao.Interfaces.Fakes.StubITestDao">
+            <summary>Stub type of ERP.Dao.Interfaces.ITestDao</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.#ctor">
+            <summary>Initializes a new instance of type StubITestDao</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.DeleteTest">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#Delete(ERP.Domain.Test)">
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{ERP.Domain.Test,System.Boolean}},ERP.Domain.Util.PaginatedInfo)">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#FetchByCustomCriteria(System.Linq.Expressions.Expression{System.Func{ERP.Domain.Test,System.Boolean}})">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#Get(System.Guid)">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#Save(ERP.Domain.Test)">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#Update(ERP.Domain.Test)">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#VerifyIfAlreadyRegistred(ERP.Domain.Test)">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#ITestDao#FetchAlredyTested">
+            <summary>Sets the stub of ITestDao.FetchAlredyTested()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.FetchAll">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.FetchAllPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.FetchAlredyTested">
+            <summary>Sets the stub of ITestDao.FetchAlredyTested()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.FetchByCustomCriteriaExpressionOfFuncOfTestBoolean">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.FetchByCustomCriteriaExpressionOfFuncOfTestBooleanPaginatedInfo">
+            <summary>Sets the stub of IBaseCrudDao`1.FetchByCustomCriteria(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; criterion, PaginatedInfo pageInfo)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.GetGuid">
+            <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.SaveTest">
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.UpdateTest">
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.VerifyIfAlreadyRegistredTest">
+            <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
+        </member>
+    </members>
+</doc>

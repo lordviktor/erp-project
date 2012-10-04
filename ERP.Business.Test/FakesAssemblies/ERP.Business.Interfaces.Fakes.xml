@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ERP.Business.Interfaces.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException">
+            <summary>Shim type of ERP.Business.Interfaces.Base.AlreadyRegistredEntityException</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.#ctor(ERP.Business.Interfaces.Base.AlreadyRegistredEntityException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.Constructor">
+            <summary>Sets the shim of AlreadyRegistredEntityException.AlreadyRegistredEntityException()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of AlreadyRegistredEntityException.AlreadyRegistredEntityException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.ConstructorString">
+            <summary>Sets the shim of AlreadyRegistredEntityException.AlreadyRegistredEntityException(String message)</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.ConstructorStringException">
+            <summary>Sets the shim of AlreadyRegistredEntityException.AlreadyRegistredEntityException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of AlreadyRegistredEntityException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.ItemAtDatabaseGet">
+            <summary>Sets the shim of AlreadyRegistredEntityException.get_ItemAtDatabase()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.ItemAtDatabaseSetObject">
+            <summary>Sets the shim of AlreadyRegistredEntityException.set_ItemAtDatabase(Object value)</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of AlreadyRegistredEntityException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.AllInstances.ItemAtDatabaseGet">
+            <summary>Sets the shim of AlreadyRegistredEntityException.get_ItemAtDatabase()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimAlreadyRegistredEntityException.AllInstances.ItemAtDatabaseSetObject">
+            <summary>Sets the shim of AlreadyRegistredEntityException.set_ItemAtDatabase(Object value)</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.ShimDatabaseOperationException">
+            <summary>Shim type of ERP.Business.Interfaces.Base.DatabaseOperationException</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimDatabaseOperationException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimDatabaseOperationException.#ctor(ERP.Business.Interfaces.Base.DatabaseOperationException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimDatabaseOperationException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimDatabaseOperationException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.ShimDatabaseOperationException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimDatabaseOperationException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.ShimDatabaseOperationException.Constructor">
+            <summary>Sets the shim of DatabaseOperationException.DatabaseOperationException()</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.ShimDatabaseOperationException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException">
+            <summary>Stub type of ERP.Business.Interfaces.Base.AlreadyRegistredEntityException</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubAlreadyRegistredEntityException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubAlreadyRegistredEntityException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of AlreadyRegistredEntityException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of AlreadyRegistredEntityException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.InitializeStub">
+            <summary>Initializes a new instance of type StubAlreadyRegistredEntityException</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubAlreadyRegistredEntityException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException">
+            <summary>Stub type of ERP.Business.Interfaces.Base.DatabaseOperationException</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubDatabaseOperationException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubDatabaseOperationException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.InitializeStub">
+            <summary>Initializes a new instance of type StubDatabaseOperationException</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:ERP.Business.Interfaces.Base.Fakes.StubDatabaseOperationException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1">
+            <summary>Stub type of ERP.Business.Interfaces.Base.IBaseCrudLogic`1</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.#ctor">
+            <summary>Initializes a new instance of type StubIBaseCrudLogic</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.DeleteT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Delete(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Save(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Update(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.SaveT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.UpdateT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1">
+            <summary>Stub type of ERP.Business.Interfaces.Base.IBaseLogicExclusionCrud`1</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.#ctor">
+            <summary>Initializes a new instance of type StubIBaseLogicExclusionCrud</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.DeleteT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Delete(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Save(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Update(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.SaveT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.UpdateT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.StubILogic">
+            <summary>Stub type of ERP.Business.Interfaces.Base.ILogic</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubILogic.#ctor">
+            <summary>Initializes a new instance of type StubILogic</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Fakes.StubICompanyLogic">
+            <summary>Stub type of ERP.Business.Interfaces.ICompanyLogic</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.#ctor">
+            <summary>Initializes a new instance of type StubICompanyLogic</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Fakes.StubICompanyLogic.DeleteCompany">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{ERP#Domain#Company}#Delete(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{ERP#Domain#Company}#FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{ERP#Domain#Company}#Save(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{ERP#Domain#Company}#Update(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Fakes.StubICompanyLogic.FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Fakes.StubICompanyLogic.SaveCompany">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Fakes.StubICompanyLogic.UpdateCompany">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+    </members>
+</doc>

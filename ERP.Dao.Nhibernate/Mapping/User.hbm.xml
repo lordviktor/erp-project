@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+
+  <joined-subclass name="ERP.Domain.User" extends="ERP.Domain.SubEntity.Person">
+    <key column="ID" foreign-key="FK_USER_PERSON"/>
+
+    <many-to-one name="TenancyCompany" class="ERP.Domain.Company" column="TENANCY_COMPANY_ID" foreign-key="FK_USER_TENANCYCOMPANY"
+          insert="false" update="false" not-null="true"/>
+
+  </joined-subclass>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
+  <class name="ERP.Domain.SubEntity.LegalPersonDetail, ERP.Domain" table="TB_LEGAL_PERSON_DETAIL">
+    <id name="Id">
+      <column name="ID"/>
+      <generator class="guid.comb"/>
+    </id>
+
+    <property name="CompanyName" column="COMPANY_NAME"/>
+    <property name="TradingName" column="TRADING_NAME"/>
+    <property name="IE" column="IE"/>
+
+    <component name="Cnpj">
+      <property name="Root" column="CNPJ_ROOT"/>
+      <property name="Suffix" column="CNPJ_SUFFIX"/>
+      <property name="CheckNumber" column="CNPJ_CHECK_NUMBER"/>
+    </component>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ERP.Domain.SubEntity.Email, ERP.Domain" table="TB_EMAIL">
+
+    <id name="Id">
+      <column name="ID"/>
+      <generator class="guid.comb"/>
+    </id>
+
+    <property name="EmailAddress" column="EMAIL_ADDRESS"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ERP.Domain.SubEntity.Phone, ERP.Domain" table ="TB_PHONE">
+
+    <id name="Id">
+      <column name="ID"/>
+      <generator class="guid.comb"/>
+    </id>
+    
+    <property name="AreaCode" column="AREA_CODE"/>
+    <property name="Number" column="NUMBER"/>
+  </class>
+</hibernate-mapping>

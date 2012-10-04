@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
+  <class name="ERP.Domain.SubEntity.Person, ERP.Domain" table="TB_PERSON">
+    <id name="Id">
+      <column name="ID"/>
+      <generator class="guid.comb"/>
+    </id>
+
+    <discriminator column="PERSON_TYPE" not-null="false" type="System.String"/>
+
+    <bag name="Address" table="TB_PERSON_ADDRESS" fetch="select" outer-join="true">
+      <key column="PERSON_ID" foreign-key="FK_LEGALPERSON_ADDRESS"/>
+      <many-to-many class="ERP.Domain.SubEntity.Address" column="ADDRESS_ID" foreign-key="FK_ADDRESS_LEGALPERSON"/>
+    </bag>
+
+    <bag name="Email" table="TB_PERSON_EMAIL" fetch="select" outer-join="true">
+      <key column="PERSON_ID" foreign-key="FK_LEGALPERSON_EMAIL"/>
+      <many-to-many class="ERP.Domain.SubEntity.Email" column="EMAIL_ID" foreign-key="FK_EMAIL_LEGALPERSON"/>
+    </bag>
+
+    <bag name="Phone" table="TB_PERSON_PHONE" fetch="select" outer-join="true">
+      <key column="PERSON_ID" foreign-key="FK_LEGALPERSON_PHONE"/>
+      <many-to-many class="ERP.Domain.SubEntity.Phone" column="PHONE_ID" foreign-key="FK_PHONE_LEGALPERSON"/>
+    </bag>
+
+    <subclass name="ERP.Domain.SubEntity.NaturalPerson, ERP.Domain" discriminator-value="NATURAL_PERSON">
+      <many-to-one name="NaturalPersonDetail" class="ERP.Domain.SubEntity.NaturalPersonDetail" not-null="false"
+                   column="NATURAL_PERSON_DETAIL_ID" foreign-key="FK_PERSON_NATURALPERSONDETAIL"/>
+    </subclass>
+
+    <subclass name="ERP.Domain.SubEntity.LegalPerson, ERP.Domain" discriminator-value="LEGAL_PERSON">
+      <many-to-one name="LegalPersonDetail" class="ERP.Domain.SubEntity.LegalPersonDetail" not-null="false"
+                   column="LEGAL_PERSON_DETAIL_ID" foreign-key="FK_PERSON_LEGALPERSONDETAIL"/>
+    </subclass>
+  </class>
+</hibernate-mapping>

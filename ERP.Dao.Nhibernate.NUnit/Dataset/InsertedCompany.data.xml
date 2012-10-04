@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ErpSchema xmlns="http://tempuri.org/ErpSchema.xsd">
+  <tb_company>
+    <Excluded>false</Excluded>
+  </tb_company>
+
+  <tb_legal_person_detail>
+    
+    <COMPANY_NAME>Bad Cat Corporation S/A</COMPANY_NAME>
+    <TRADING_NAME>BadCat SA</TRADING_NAME>
+
+    <IE>123456</IE>
+    
+    <CNPJ_ROOT>12345</CNPJ_ROOT>
+    <CNPJ_SUFFIX>12</CNPJ_SUFFIX>
+    <CNPJ_CHECK_NUMBER>12</CNPJ_CHECK_NUMBER>
+    
+  </tb_legal_person_detail>
+
+</ErpSchema>

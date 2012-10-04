@@ -1,0 +1,198 @@
+﻿
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="erpModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="erpModelStoreContainer">
+          <EntitySet Name="tb_bairro" EntityType="erpModel.Store.tb_bairro" store:Type="Tables" Schema="erp" />
+          <EntitySet Name="tb_cidade" EntityType="erpModel.Store.tb_cidade" store:Type="Tables" Schema="erp" />
+          <EntitySet Name="tb_endereco" EntityType="erpModel.Store.tb_endereco" store:Type="Tables" Schema="erp" />
+          <EntitySet Name="tb_estado" EntityType="erpModel.Store.tb_estado" store:Type="Tables" Schema="erp" />
+          <AssociationSet Name="fk_Tb_Cidade_Tb_Estado1" Association="erpModel.Store.fk_Tb_Cidade_Tb_Estado1">
+            <End Role="tb_estado" EntitySet="tb_estado" />
+            <End Role="tb_cidade" EntitySet="tb_cidade" />
+          </AssociationSet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'fk_Tb_Endereco_tb_Bairro' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="tb_bairro">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Bairro" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="Id_Bairro" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'fk_tb_Bairro_Tb_Cidade1' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="tb_cidade">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Estado" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="45" />
+          <Property Name="Id_Estado" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_endereco">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Bairro" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Logradouro" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="Endereco" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="Numero" Type="int" />
+          <Property Name="Id_Bairro" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_estado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="varchar" MaxLength="45" />
+          <Property Name="Uf" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <Association Name="fk_Tb_Cidade_Tb_Estado1">
+          <End Role="tb_estado" Type="erpModel.Store.tb_estado" Multiplicity="1" />
+          <End Role="tb_cidade" Type="erpModel.Store.tb_cidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="tb_cidade">
+              <PropertyRef Name="Id_Estado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="erpModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:ib10="http://www.ideablade.com/edm/2010">
+        <EntityContainer Name="ErpEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tb_bairro" EntityType="erpModel.tb_bairro" />
+          <EntitySet Name="tb_cidade" EntityType="erpModel.tb_cidade" />
+          <EntitySet Name="tb_endereco" EntityType="erpModel.tb_endereco" />
+          <EntitySet Name="tb_estado" EntityType="erpModel.tb_estado" />
+          <AssociationSet Name="fk_Tb_Cidade_Tb_Estado1" Association="erpModel.fk_Tb_Cidade_Tb_Estado1">
+            <End Role="tb_estado" EntitySet="tb_estado" />
+            <End Role="tb_cidade" EntitySet="tb_cidade" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tb_bairro">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Bairro" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" Nullable="false" />
+          <Property Name="Id_Bairro" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_cidade">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Estado" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Nome" Type="String" />
+          <Property Name="Id_Estado" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tb_estado" Relationship="erpModel.fk_Tb_Cidade_Tb_Estado1" FromRole="tb_cidade" ToRole="tb_estado" />
+        </EntityType>
+        <EntityType Name="tb_endereco">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Id_Bairro" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Logradouro" Type="String" Nullable="false" />
+          <Property Name="Endereco" Type="String" Nullable="false" />
+          <Property Name="Numero" Type="Int32" />
+          <Property Name="Id_Bairro" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_estado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" />
+          <Property Name="Uf" Type="String" />
+          <NavigationProperty Name="tb_cidade" Relationship="erpModel.fk_Tb_Cidade_Tb_Estado1" FromRole="tb_estado" ToRole="tb_cidade" />
+        </EntityType>
+        <Association Name="fk_Tb_Cidade_Tb_Estado1">
+          <End Role="tb_estado" Type="erpModel.tb_estado" Multiplicity="1" />
+          <End Role="tb_cidade" Type="erpModel.tb_cidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_estado">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="tb_cidade">
+              <PropertyRef Name="Id_Estado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="erpModelStoreContainer" CdmEntityContainer="ErpEntities">
+          <EntitySetMapping Name="tb_bairro"><EntityTypeMapping TypeName="erpModel.tb_bairro"><MappingFragment StoreEntitySet="tb_bairro">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Nome" ColumnName="Nome" />
+            <ScalarProperty Name="Id_Bairro" ColumnName="Id_Bairro" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tb_cidade"><EntityTypeMapping TypeName="erpModel.tb_cidade"><MappingFragment StoreEntitySet="tb_cidade">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Nome" ColumnName="Nome" />
+            <ScalarProperty Name="Id_Estado" ColumnName="Id_Estado" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tb_endereco"><EntityTypeMapping TypeName="erpModel.tb_endereco"><MappingFragment StoreEntitySet="tb_endereco">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Logradouro" ColumnName="Logradouro" />
+            <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+            <ScalarProperty Name="Numero" ColumnName="Numero" />
+            <ScalarProperty Name="Id_Bairro" ColumnName="Id_Bairro" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tb_estado"><EntityTypeMapping TypeName="erpModel.tb_estado"><MappingFragment StoreEntitySet="tb_estado">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Nome" ColumnName="Nome" />
+            <ScalarProperty Name="Uf" ColumnName="Uf" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model">
+        <EntityTypeShape EntityType="erpModel.tb_bairro" Width="1.5" PointX="0.75" PointY="3.125" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="erpModel.tb_cidade" Width="1.5" PointX="3" PointY="0.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="erpModel.tb_endereco" Width="1.5" PointX="3" PointY="3" Height="1.9802864583333326" IsExpanded="true" />
+        <EntityTypeShape EntityType="erpModel.tb_estado" Width="1.5" PointX="0.75" PointY="0.875" Height="1.7879850260416657" IsExpanded="true" />
+        <AssociationConnector Association="erpModel.fk_Tb_Cidade_Tb_Estado1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.7689925130208328" />
+          <ConnectorPoint PointX="3" PointY="1.7689925130208328" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

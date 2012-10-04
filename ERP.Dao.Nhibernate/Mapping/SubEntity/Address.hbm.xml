@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
+  <class name="ERP.Domain.SubEntity.Address, ERP.Domain" table="TB_ADDRESS">
+    <id name="Id">
+      <column name="ID"/>
+      <generator class="guid.comb"/>
+    </id>
+
+    <property name="Street" column="STREET"/>
+    <property name="Number" column="NUMBER"/>
+    <property name="Complement" column="COMPLEMENT"/>
+
+    <many-to-one  name="Neighborhood" class="ERP.Domain.SubEntity.Bairro" column="BAIRRO_ID" foreign-key="FK_ADDRESS_BAIRRO"
+                  insert="false" update="false" not-null="true"/>
+  </class>
+
+  <!--TABELA BAIRRO-->
+  <class name="ERP.Domain.SubEntity.Bairro, ERP.Domain" table="TB_BAIRRO">
+    <id name="Id">
+      <column name="ID"/>
+      <generator class="guid.comb"/>
+    </id>
+
+    <property name="Name" column="BAIRRO"/>
+    <many-to-one  name="City" class="ERP.Domain.SubEntity.City" column="CITY_ID" foreign-key="FK_BAIRRO_CITY"
+                  insert="false" update="false" not-null="true"/>
+  </class>
+
+  <!-- TABLE CITY -->
+  <class name="ERP.Domain.SubEntity.City, ERP.Domain" table="TB_CITY">
+    <id name="Id">
+      <column name="ID"/>
+      <generator class="guid.comb"/>
+    </id>
+
+    <property name="Name" column="CITY"/>
+    <many-to-one name="State" class="ERP.Domain.SubEntity.State" column="STATE_ID" foreign-key="FK_CITY_STATE"
+             insert="false" update="false" not-null="true"/>
+    <bag name ="Bairros" fetch="select" outer-join="true" cascade="all">
+      <key column="CITY_ID" foreign-key="FK_BAIRRO_CITY"/>
+      <one-to-many class="ERP.Domain.SubEntity.Bairro"/>
+    </bag>
+  </class>
+
+  <!-- TABLE STATE -->
+  <class name="ERP.Domain.SubEntity.State, ERP.Domain" table="TB_STATE">
+    <id name="Id">
+      <column name="ID"/>
+      <generator class="guid.comb"/>
+    </id>
+
+    <bag name ="Cities" fetch="select" outer-join="true" cascade="all">
+      <key column="STATE_ID" foreign-key="FK_CITY_STATE"/>
+      <one-to-many class="ERP.Domain.SubEntity.City"/>
+    </bag>
+
+    <property name="Name" column="STATE"/>
+
+  </class>
+</hibernate-mapping>

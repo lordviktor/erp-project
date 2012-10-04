@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ERP.Business.Interfaces.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1">
+            <summary>Stub type of ERP.Business.Interfaces.Base.IBaseCrudLogic`1</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.#ctor">
+            <summary>Initializes a new instance of type StubIBaseCrudLogic</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.DeleteT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Delete(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Save(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Update(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.SaveT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseCrudLogic`1.UpdateT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1">
+            <summary>Stub type of ERP.Business.Interfaces.Base.IBaseLogicExclusionCrud`1</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.#ctor">
+            <summary>Initializes a new instance of type StubIBaseLogicExclusionCrud</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.DeleteT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Delete(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Save(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{T}#Update(`0)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.SaveT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Base.Fakes.StubIBaseLogicExclusionCrud`1.UpdateT0">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Base.Fakes.StubILogic">
+            <summary>Stub type of ERP.Business.Interfaces.Base.ILogic</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Base.Fakes.StubILogic.#ctor">
+            <summary>Initializes a new instance of type StubILogic</summary>
+        </member>
+        <member name="T:ERP.Business.Interfaces.Fakes.StubICompanyLogic">
+            <summary>Stub type of ERP.Business.Interfaces.ICompanyLogic</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.#ctor">
+            <summary>Initializes a new instance of type StubICompanyLogic</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Fakes.StubICompanyLogic.DeleteCompany">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{ERP#Domain#Company}#Delete(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Delete(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{ERP#Domain#Company}#FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{ERP#Domain#Company}#Save(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="M:ERP.Business.Interfaces.Fakes.StubICompanyLogic.erpbi::ERP#Business#Interfaces#Base#IBaseCrudLogic{ERP#Domain#Company}#Update(ERP.Domain.Company)">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Fakes.StubICompanyLogic.FetchAll">
+            <summary>Sets the stub of IBaseCrudLogic`1.FetchAll()</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Fakes.StubICompanyLogic.SaveCompany">
+            <summary>Sets the stub of IBaseCrudLogic`1.Save(!0 data)</summary>
+        </member>
+        <member name="F:ERP.Business.Interfaces.Fakes.StubICompanyLogic.UpdateCompany">
+            <summary>Sets the stub of IBaseCrudLogic`1.Update(!0 data)</summary>
+        </member>
+    </members>
+</doc>

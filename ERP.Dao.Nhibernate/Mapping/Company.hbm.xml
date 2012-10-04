@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
+
+  <class name="ERP.Domain.Company, ERP.Domain" table="TB_COMPANY">
+
+    <id name="Id" type="System.Guid">
+      <column name="ID"/>
+      <generator class="ERP.Dao.Nhibernate.Util.GuidCustomId, ERP.Dao.Nhibernate"/>
+    </id>
+
+    <property name="Excluded"/>
+
+    <many-to-one name="HeadCompany" column="HEAD_COMPANY_ID" foreign-key="FK_COMPANY_HEADCOMPANY"
+                 class="ERP.Domain.Company"
+                 insert="false" update="false"/>
+
+    <bag name="BranchCompany" fetch="select" outer-join="true" cascade="all">
+      <key column="HEAD_COMPANY_ID"></key>
+      <one-to-many class="ERP.Domain.Company"/>
+    </bag>
+
+    <many-to-one  name="LegalPersonDetail" class="ERP.Domain.SubEntity.LegalPersonDetail" not-null="true"
+                  cascade="all"
+                  column="LEGAL_PERSON_DETAIL_ID" foreign-key="FK_COMPANY_LEGALPERSONDETAIL"/>
+
+    <bag name="Address" table="TB_COMPANY_ADDRESS" fetch="select" outer-join="true" cascade="all">
+      <key column="COMPANY_ID" foreign-key="FK_COMPANY_ADDRESS"/>
+      <many-to-many class="ERP.Domain.SubEntity.Address" column="ADDRESS_ID" foreign-key="FK_ADDRESS_COMPANY"/>
+    </bag>
+
+    <bag name="Email" table="TB_COMPANY_EMAIL" fetch="select" outer-join="true" cascade="all">
+      <key column="COMPANY_ID" foreign-key="FK_COMPANY_EMAIL"/>
+      <many-to-many class="ERP.Domain.SubEntity.Email" column="EMAIL_ID" foreign-key="FK_EMAIL_COMPANY"/>
+    </bag>
+
+    <bag name="Phone" table="TB_COMPANY_PHONE" fetch="select" outer-join="true" cascade="all">
+      <key column="COMPANY_ID" foreign-key="FK_COMPANY_PHONE"/>
+      <many-to-many class="ERP.Domain.SubEntity.Phone" column="PHONE_ID" foreign-key="FK_PHONE_COMPANY"/>
+    </bag>
+  </class>
+</hibernate-mapping>
