@@ -42,7 +42,9 @@ namespace ERP.Dao.Nhibernate
                 var configuration = Fluently
                     .Configure()
                     .Database(MySQLConfiguration.Standard.ConnectionString(connectionString))
-                    .Mappings(x => x.FluentMappings.AddFromAssemblyOf<AddressMap>().Conventions.AddFromAssemblyOf<TableNameConvention>())
+                    .Mappings(x => x.FluentMappings.AddFromAssemblyOf<AddressMap>()
+                        .Conventions
+                            .AddFromAssemblyOf<TableNameConvention>())
                     .ExposeConfiguration(cfg =>
                         {
                             cfg.SetProperty(NHibernate.Cfg.Environment.ShowSql, true.ToString());
@@ -57,8 +59,6 @@ namespace ERP.Dao.Nhibernate
                 BuildEnversConfiguration(configuration);
 
                 _sessionFactory = configuration.BuildSessionFactory();
-
-                //_sessionFactory = configuration.BuildSessionFactory();
 
                 var schemaUpdate = new SchemaUpdate(configuration);
                 schemaUpdate.Execute(true, true);

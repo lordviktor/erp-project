@@ -1,4 +1,5 @@
-﻿using FluentNHibernate.Conventions;
+﻿using ERP.Dao.Nhibernate.Util;
+using FluentNHibernate.Conventions;
 using FluentNHibernate.Conventions.AcceptanceCriteria;
 using System;
 using System.Collections.Generic;
@@ -10,18 +11,18 @@ namespace ERP.Dao.Nhibernate.Mapping.Conventions
 {
     public class TableNameConvention : IClassConvention, IClassConventionAcceptance
     {
+        private const String TABLE_PREFIX = "TB_";
+
         public void Apply(FluentNHibernate.Conventions.Instances.IClassInstance instance)
         {
             var tableName = instance.EntityType.Name;
-            tableName = Regex.Replace(tableName, "(.)([A-Z][a-z]+)", "_");
-            tableName = Regex.Replace(tableName, "([a-z0-9])([A-Z])", "_");
-            tableName = "TB_" + tableName;
-            instance.Table(tableName.Trim().ToUpper());
+            tableName = ConventionsUtilities.CamelCaseToUpperCaseWithUnderscoreSeparator(tableName);
+            instance.Table(TABLE_PREFIX + tableName);
         }
 
         public void Accept(FluentNHibernate.Conventions.AcceptanceCriteria.IAcceptanceCriteria<FluentNHibernate.Conventions.Inspections.IClassInspector> criteria)
         {
-            criteria.Expect(x => x.TableName, Is.Not.Set);
+        //    criteria.Expect(x => x.TableName, Is.Not.Set);
         }
     }
 }

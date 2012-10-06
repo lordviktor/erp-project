@@ -15,7 +15,7 @@ namespace ERP.Dao.Nhibernate.Mapping
     {
         public BaseEntityMap()
         {
-            Id(x => x.Id, "ID").GeneratedBy.Custom<GuidCustomId>();
+            Id(x => x.Id).GeneratedBy.Custom<GuidCustomId>();
         }
     }
 

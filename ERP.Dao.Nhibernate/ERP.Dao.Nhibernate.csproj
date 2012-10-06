@@ -74,11 +74,16 @@
     <Compile Include="Dao\Base\BaseMultiTenancyDao.cs" />
     <Compile Include="Dao\CompanyDaoNhibernate.cs" />
     <Compile Include="Dao\TestDaoNhibernate.cs" />
+    <Compile Include="Mapping\Conventions\ForeignKeyConstraintNameConvention.cs" />
+    <Compile Include="Mapping\Conventions\ForeignKeyNameConvention.cs" />
+    <Compile Include="Mapping\Conventions\PrimaryKeyNameConvention.cs" />
+    <Compile Include="Mapping\Conventions\ReferenceConvention.cs" />
     <Compile Include="Mapping\Conventions\TableNameConvention.cs" />
     <Compile Include="Mapping\StateMap.cs" />
     <Compile Include="NhibernateDaoFactory.cs" />
     <Compile Include="NhibernateSession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\ConventionsUtilities.cs" />
     <Compile Include="Util\GuidCustomId.cs" />
   </ItemGroup>
   <ItemGroup>
