@@ -11,6 +11,10 @@ using NHibernate;
 using NHibernate.Bytecode;
 using NHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;
+using FluentNHibernate.Cfg;
+using ERP.Dao.Nhibernate.Mapping;
+using FluentNHibernate.Cfg.Db;
+using ERP.Dao.Nhibernate.Mapping.Conventions;
 
 #endregion
 
@@ -35,13 +39,26 @@ namespace ERP.Dao.Nhibernate
             {
                 this.Company = company;
 
-                var configuration = new Configuration();
+                var configuration = Fluently
+                    .Configure()
+                    .Database(MySQLConfiguration.Standard.ConnectionString(connectionString))
+                    .Mappings(x => x.FluentMappings.AddFromAssemblyOf<AddressMap>().Conventions.AddFromAssemblyOf<TableNameConvention>())
+                    .ExposeConfiguration(cfg =>
+                        {
+                            cfg.SetProperty(NHibernate.Cfg.Environment.ShowSql, true.ToString());
+                            cfg.SetProperty(NHibernate.Cfg.Environment.Hbm2ddlAuto, "update");
+                            cfg.SetProperty(NHibernate.Cfg.Environment.UseProxyValidator, false.ToString());
+                        }
+                    )
+                    .BuildConfiguration();
 
-                BuildNHibernateConfig(connectionString, configuration);
+                //BuildNHibernateConfig(connectionString, configuration);
 
                 BuildEnversConfiguration(configuration);
 
                 _sessionFactory = configuration.BuildSessionFactory();
+
+                //_sessionFactory = configuration.BuildSessionFactory();
 
                 var schemaUpdate = new SchemaUpdate(configuration);
                 schemaUpdate.Execute(true, true);
@@ -64,8 +81,10 @@ namespace ERP.Dao.Nhibernate
             configuration.SetProperty(NHibernate.Cfg.Environment.ProxyFactoryFactoryClass,
                                       typeof(DefaultProxyFactoryFactory).AssemblyQualifiedName);
             configuration.SetProperty(NHibernate.Cfg.Environment.UseProxyValidator, false.ToString());
-            configuration.AddAssembly("ERP.Domain");
-            configuration.AddAssembly("ERP.Dao.Nhibernate");
+            //configuration.AddAssembly("ERP.Domain");
+            //configuration.AddAssembly("ERP.Dao.Nhibernate");
+
+            //Fluently.Configure(configuration).Mappings(m => m.FluentMappings.AddFromAssemblyOf<AddressMap>());
         }
 
         private static void BuildEnversConfiguration(Configuration configuration)
@@ -92,7 +111,7 @@ namespace ERP.Dao.Nhibernate
             }
 
             return _currentSession;
-        } 
+        }
         #endregion
     }
 }
