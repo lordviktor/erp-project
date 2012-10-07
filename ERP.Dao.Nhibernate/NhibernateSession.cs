@@ -56,7 +56,7 @@ namespace ERP.Dao.Nhibernate
 
                 //BuildNHibernateConfig(connectionString, configuration);
 
-                BuildEnversConfiguration(configuration);
+                //BuildEnversConfiguration(configuration);
 
                 _sessionFactory = configuration.BuildSessionFactory();
 

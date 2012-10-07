@@ -45,7 +45,6 @@ namespace ERP.Dao.Nhibernate.Mapping
     }
 
 
-
     public class StateMap : BaseEntityMap<State>
     {
         public StateMap()
@@ -66,15 +65,15 @@ namespace ERP.Dao.Nhibernate.Mapping
 
             References<State>(x => x.State);
 
-            HasMany<Bairro>(x => x.Bairros)
+            HasMany<Neighborhood>(x => x.Neighborhoods)
                 .Fetch.Select()
                 .Cascade.All();
         }
     }
 
-    public class BairroMap : BaseEntityMap<Bairro>
+    public class NeighborhoodMap : BaseEntityMap<Neighborhood>
     {
-        public BairroMap()
+        public NeighborhoodMap()
         {
             Map(x => x.Name);
 
@@ -90,7 +89,7 @@ namespace ERP.Dao.Nhibernate.Mapping
             Map(X => X.Number).Nullable();
             Map(x => x.Complement);
 
-            References<Bairro>(X => X.Neighborhood);
+            References<Neighborhood>(X => X.Neighborhood);
         }
     }
 

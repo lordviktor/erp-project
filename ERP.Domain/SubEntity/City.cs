@@ -14,6 +14,6 @@ namespace ERP.Domain.SubEntity
 
         public State State { get; set; }
 
-        public IList<Bairro> Bairros { get; set; }
+        public IList<Neighborhood> Neighborhoods { get; set; }
     }
 }

@@ -15,6 +15,6 @@ namespace ERP.Domain.SubEntity
 
         public String Complement { get; set; }
 
-        public Bairro Neighborhood { get; set; }
+        public Neighborhood Neighborhood { get; set; }
     }
 }

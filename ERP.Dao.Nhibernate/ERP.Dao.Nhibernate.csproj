@@ -74,6 +74,8 @@
     <Compile Include="Dao\Base\BaseMultiTenancyDao.cs" />
     <Compile Include="Dao\CompanyDaoNhibernate.cs" />
     <Compile Include="Dao\TestDaoNhibernate.cs" />
+    <Compile Include="Mapping\Conventions\ColumnNameConvention.cs" />
+    <Compile Include="Mapping\Conventions\ColumnNullabilityConvention.cs" />
     <Compile Include="Mapping\Conventions\ForeignKeyConstraintNameConvention.cs" />
     <Compile Include="Mapping\Conventions\ForeignKeyNameConvention.cs" />
     <Compile Include="Mapping\Conventions\PrimaryKeyNameConvention.cs" />

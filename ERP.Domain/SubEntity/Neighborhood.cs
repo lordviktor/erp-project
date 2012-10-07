@@ -7,7 +7,7 @@ using ERP.Domain.BasicEntity;
 
 namespace ERP.Domain.SubEntity
 {
-    public class Bairro : BaseEntity
+    public class Neighborhood : BaseEntity
     {
         public String Name { get; set; }
 
