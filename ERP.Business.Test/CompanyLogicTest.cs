@@ -29,7 +29,7 @@ namespace ERP.Business.Test
         {
             Company company = null;
             var companyLogic = new CompanyLogic(new StubICompanyDao());
-            companyLogic.Save(null);
+            companyLogic.Save(company);
         }
 
         [TestMethod]

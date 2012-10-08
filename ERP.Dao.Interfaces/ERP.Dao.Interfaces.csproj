@@ -44,7 +44,10 @@
     <Compile Include="BaseType\IBaseLogicExclusionDao.cs" />
     <Compile Include="BaseType\IDatabaseManager.cs" />
     <Compile Include="BaseType\IBaseMultiTenancyDao.cs" />
+    <Compile Include="ICityDao.cs" />
     <Compile Include="ICompanyDao.cs" />
+    <Compile Include="INeighborhoodDao.cs" />
+    <Compile Include="IStateDao.cs" />
     <Compile Include="ITestDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

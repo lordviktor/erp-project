@@ -18,7 +18,7 @@ namespace ERP.Dao.Nhibernate.Mapping.Conventions
 
         public void Accept(FluentNHibernate.Conventions.AcceptanceCriteria.IAcceptanceCriteria<FluentNHibernate.Conventions.Inspections.IPropertyInspector> criteria)
         {
-            criteria.Expect(x => x.Name, Is.Not.Set);
+             //criteria.Expect(x => x.Name, Is.Not.Set);
         }
     }
 }

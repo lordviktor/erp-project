@@ -63,7 +63,7 @@ namespace ERP.Dao.Nhibernate.Mapping
         {
             Map(x => x.Name);
 
-            References<State>(x => x.State);
+            //References<State>(x => x.State);
 
             HasMany<Neighborhood>(x => x.Neighborhoods)
                 .Fetch.Select()
@@ -77,7 +77,7 @@ namespace ERP.Dao.Nhibernate.Mapping
         {
             Map(x => x.Name);
 
-            References(x => x.City);
+            //References(x => x.City);
         }
     }
 
@@ -89,7 +89,7 @@ namespace ERP.Dao.Nhibernate.Mapping
             Map(X => X.Number).Nullable();
             Map(x => x.Complement);
 
-            References<Neighborhood>(X => X.Neighborhood);
+            //References<Neighborhood>(X => X.Neighborhood);
         }
     }
 
