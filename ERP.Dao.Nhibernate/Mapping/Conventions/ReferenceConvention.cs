@@ -13,7 +13,7 @@ namespace ERP.Dao.Nhibernate.Mapping.Conventions
         public void Apply(IManyToOneInstance instance)
         {
             var originName = ConventionsUtilities
-                .CamelCaseToUpperCaseWithUnderscoreSeparator(instance.EntityType.Name);
+                .CamelCaseToUpperCaseWithUnderscoreSeparator(instance.Property.MemberInfo.Name);
             instance.Column(originName + "_ID");
         }
     }

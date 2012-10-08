@@ -52,6 +52,8 @@ namespace ERP.Dao.Nhibernate.Mapping
             Map(x => x.Name);
 
             HasMany<City>(x => x.Cities)
+                .Inverse()
+                .AsBag()
                 .Fetch.Select()
                 .Cascade.All();
         }
@@ -63,7 +65,7 @@ namespace ERP.Dao.Nhibernate.Mapping
         {
             Map(x => x.Name);
 
-            //References<State>(x => x.State);
+            References<State>(x => x.State);
 
             HasMany<Neighborhood>(x => x.Neighborhoods)
                 .Fetch.Select()
