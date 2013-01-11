@@ -8,7 +8,6 @@ using ERP.Domain;
 
 namespace ERP.Dao.Nhibernate.Dao
 {
-    [DaoExport(typeof (ICompanyDao), PersistenceType.Nhibernate)]
     public class CompanyDaoNhibernate : Base.BaseLogicExclusionDao<Company>, ICompanyDao
     {
     }

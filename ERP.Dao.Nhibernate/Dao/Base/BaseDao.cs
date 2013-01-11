@@ -28,9 +28,14 @@ namespace ERP.Dao.Nhibernate.Dao.Base
 
         public virtual T Get(Guid Id)
         {
-            T result = null;
-            result = this.GetQueryOver().Where(x => x.Id == Id).SingleOrDefault();
-            return result;
+            try
+            {
+                return this.GetQueryOver().Where(x => x.Id == Id).SingleOrDefault();
+            }
+            catch (DatabaseOperationException ex)
+            {
+                throw new DatabaseOperationException("Error while try to get entity with especified identifier.", ex);
+            }
         }
 
         public virtual void Save(T item)
@@ -98,7 +103,7 @@ namespace ERP.Dao.Nhibernate.Dao.Base
             var result = new PaginatedResult<T>
                              {
                                  Count = query.RowCount(),
-                                 Data = query.Skip(pageInfo.PageNumber*pageInfo.PageSize).Take(pageInfo.PageSize).List(),
+                                 Data = query.Skip(pageInfo.PageNumber * pageInfo.PageSize).Take(pageInfo.PageSize).List(),
                                  Page = pageInfo.PageNumber,
                                  PageSize = pageInfo.PageSize
                              };
@@ -112,8 +117,7 @@ namespace ERP.Dao.Nhibernate.Dao.Base
             var result = new PaginatedResult<T>
                              {
                                  Count = query.Where(criterion).RowCount(),
-                                 Data =
-                                     query.Where(criterion).Skip(pageInfo.PageNumber*pageInfo.PageSize).Take(
+                                 Data = query.Where(criterion).Skip(pageInfo.PageNumber * pageInfo.PageSize).Take(
                                          pageInfo.PageSize).List(),
                                  Page = pageInfo.PageNumber,
                                  PageSize = pageInfo.PageSize

@@ -6,6 +6,8 @@ using ERP.Business.Interfaces.Base;
 using ERP.Dao.Interfaces;
 using ERP.Dao.Interfaces.BaseType;
 using ERP.Domain.BasicEntity;
+using ERP.Domain.Util;
+using System.Linq.Expressions;
 
 #endregion
 
@@ -86,6 +88,43 @@ namespace ERP.Business.Base
                 throw;
             }
             return ListResult;
+        }
+
+        public PaginatedResult<T> FecthAll(PaginatedInfo pageInfo)
+        {
+            try
+            {
+                return Repository.FetchAll(pageInfo);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public IEnumerable<T> FetchByCustomCriteria(Expression<Func<T, bool>> criterion)
+        {
+            try
+            {
+                return Repository.FetchByCustomCriteria(criterion);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public PaginatedResult<T> FetchByCustomCriteria(Expression<Func<T, bool>> criterion,
+            PaginatedInfo pageInfo)
+        {
+            try
+            {
+                return Repository.FetchByCustomCriteria(criterion, pageInfo);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
