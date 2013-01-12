@@ -4,6 +4,117 @@
         <name>ERP.Dao.Interfaces.Fakes</name>
     </assembly>
     <members>
+        <member name="T:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException">
+            <summary>Shim type of ERP.Dao.Interfaces.BaseType.DatabaseOperationException</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException.#ctor(ERP.Dao.Interfaces.BaseType.DatabaseOperationException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException.ConstructorString">
+            <summary>Sets the shim of DatabaseOperationException.DatabaseOperationException(String message)</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException.ConstructorStringDatabaseOperationException">
+            <summary>Sets the shim of DatabaseOperationException.DatabaseOperationException(String message, DatabaseOperationException ex)</summary>
+        </member>
+        <member name="T:ERP.Dao.Interfaces.BaseType.Fakes.ShimDatabaseOperationException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException">
+            <summary>Stub type of ERP.Dao.Interfaces.BaseType.DatabaseOperationException</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.#ctor(System.String,ERP.Dao.Interfaces.BaseType.DatabaseOperationException)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubDatabaseOperationException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubDatabaseOperationException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.InitializeStub">
+            <summary>Initializes a new instance of type StubDatabaseOperationException</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:ERP.Dao.Interfaces.BaseType.Fakes.StubDatabaseOperationException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
         <member name="T:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1">
             <summary>Stub type of ERP.Dao.Interfaces.BaseType.IBaseCrudDao`1</summary>
         </member>
@@ -11,10 +122,10 @@
             <summary>Initializes a new instance of type StubIBaseCrudDao</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.DeleteT0">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Delete(`0)">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
             <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
@@ -32,10 +143,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Save(`0)">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Update(`0)">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#VerifyIfAlreadyRegistred(`0)">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
@@ -56,10 +167,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.SaveT0">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.UpdateT0">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseCrudDao`1.VerifyIfAlreadyRegistredT0">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
@@ -77,10 +188,10 @@
             <summary>Initializes a new instance of type StubIBaseLogicExclusionDao</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.DeleteT0">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Delete(`0)">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
             <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
@@ -98,10 +209,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Save(`0)">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Update(`0)">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#VerifyIfAlreadyRegistred(`0)">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
@@ -122,10 +233,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.SaveT0">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.UpdateT0">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseLogicExclusionDao`1.VerifyIfAlreadyRegistredT0">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
@@ -137,10 +248,10 @@
             <summary>Initializes a new instance of type StubIBaseMultiTenancyDao</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.DeleteT0">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Delete(`0)">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
             <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
@@ -158,10 +269,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Save(`0)">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#Update(`0)">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{T}#VerifyIfAlreadyRegistred(`0)">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
@@ -182,10 +293,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.SaveT0">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.UpdateT0">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.BaseType.Fakes.StubIBaseMultiTenancyDao`1.VerifyIfAlreadyRegistredT0">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
@@ -209,10 +320,10 @@
             <summary>Initializes a new instance of type StubICompanyDao</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.DeleteCompany">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#Delete(ERP.Domain.Company)">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
             <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
@@ -230,10 +341,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#Save(ERP.Domain.Company)">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#Update(ERP.Domain.Company)">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubICompanyDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Company}#VerifyIfAlreadyRegistred(ERP.Domain.Company)">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
@@ -254,10 +365,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.SaveCompany">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.UpdateCompany">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.Fakes.StubICompanyDao.VerifyIfAlreadyRegistredCompany">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
@@ -269,10 +380,10 @@
             <summary>Initializes a new instance of type StubITestDao</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.DeleteTest">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#Delete(ERP.Domain.Test)">
-            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Delete(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#FetchAll(ERP.Domain.Util.PaginatedInfo)">
             <summary>Sets the stub of IBaseCrudDao`1.FetchAll(PaginatedInfo pageInfo)</summary>
@@ -290,10 +401,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#Save(ERP.Domain.Test)">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#Update(ERP.Domain.Test)">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="M:ERP.Dao.Interfaces.Fakes.StubITestDao.erpdi::ERP#Dao#Interfaces#BaseType#IBaseCrudDao{ERP#Domain#Test}#VerifyIfAlreadyRegistred(ERP.Domain.Test)">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>
@@ -320,10 +431,10 @@
             <summary>Sets the stub of IBaseCrudDao`1.Get(Guid Id)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.SaveTest">
-            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Save(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.UpdateTest">
-            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 item)</summary>
+            <summary>Sets the stub of IBaseCrudDao`1.Update(!0 entity)</summary>
         </member>
         <member name="F:ERP.Dao.Interfaces.Fakes.StubITestDao.VerifyIfAlreadyRegistredTest">
             <summary>Sets the stub of IBaseCrudDao`1.VerifyIfAlreadyRegistred(!0 item)</summary>

@@ -12,7 +12,7 @@ namespace ERP.Business.Test
     {
 
         #region Save
-        
+
         [TestMethod]
         public void SaveEntityTestCase()
         {
@@ -57,7 +57,7 @@ namespace ERP.Business.Test
             });
             companyLogic.Save(company);
         }
-        
+
         #endregion
 
         [TestMethod]

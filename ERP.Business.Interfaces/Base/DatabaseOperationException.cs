@@ -6,7 +6,7 @@ using System.Text;
 namespace ERP.Business.Interfaces.Base
 {
     [Serializable]
-    public class DatabaseOperationException:Exception
+    public class DatabaseOperationException : Exception
     {
 
     }

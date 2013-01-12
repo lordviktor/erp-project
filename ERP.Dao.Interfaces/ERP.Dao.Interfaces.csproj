@@ -39,6 +39,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseType\DatabaseOperationException.cs" />
     <Compile Include="BaseType\IBaseCrudDao.cs" />
     <Compile Include="BaseType\IBaseDAO.cs" />
     <Compile Include="BaseType\IBaseLogicExclusionDao.cs" />
