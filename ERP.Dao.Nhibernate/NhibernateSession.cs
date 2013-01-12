@@ -41,7 +41,7 @@ namespace ERP.Dao.Nhibernate
 
                 var configuration = Fluently
                     .Configure()
-                    .Database(MySQLConfiguration.Standard.ConnectionString(connectionString))
+                    .Database(MySQLConfiguration.Standard.ConnectionString(connectionString).ShowSql())//SQLiteConfiguration.Standard.UsingFile("Teste.db")) //MySQLConfiguration.Standard.ConnectionString(connectionString))
                     .Mappings(x => x.FluentMappings.AddFromAssemblyOf<AddressMap>()
                         .Conventions
                             .AddFromAssemblyOf<TableNameConvention>())

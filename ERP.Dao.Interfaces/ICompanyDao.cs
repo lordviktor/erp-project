@@ -9,5 +9,6 @@ namespace ERP.Dao.Interfaces
 {
     public interface ICompanyDao : IBaseLogicExclusionDao<Company>
     {
+
     }
 }

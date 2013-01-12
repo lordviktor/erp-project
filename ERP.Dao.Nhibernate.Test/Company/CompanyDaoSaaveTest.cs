@@ -50,7 +50,6 @@ namespace ERP.Dao.Nhibernate.Test.Company
 
         #endregion
 
-        [TestMethod]
         public void SaveTest()
         {
             var Database = new MySqlDbUnitTest(Properties.Resources.ConnectionString);

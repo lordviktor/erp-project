@@ -30,8 +30,9 @@ namespace ERP.Business.Test
         [ExpectedException(typeof(ArgumentNullException), "O metodo save nao pode tentar salvar um valor nulo")]
         public void TryToSaveNullEntity()
         {
-            var target = new CompanyLogic(new StubICompanyDao());
-            target.Save(null);
+            Company company = null;
+            var companyLogic = new CompanyLogic(new StubICompanyDao());
+            companyLogic.Save(company);
         }
 
         [TestMethod]

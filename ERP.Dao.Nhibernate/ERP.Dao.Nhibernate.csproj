@@ -73,6 +73,7 @@
     <Compile Include="Dao\Base\BaseLogicExclusionDao.cs" />
     <Compile Include="Dao\Base\BaseMultiTenancyDao.cs" />
     <Compile Include="Dao\CompanyDaoNhibernate.cs" />
+    <Compile Include="Dao\StateDaoNhibernate.cs" />
     <Compile Include="Dao\TestDaoNhibernate.cs" />
     <Compile Include="Mapping\Conventions\ColumnNameConvention.cs" />
     <Compile Include="Mapping\Conventions\ColumnNullabilityConvention.cs" />
