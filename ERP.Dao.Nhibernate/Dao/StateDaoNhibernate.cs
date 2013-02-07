@@ -7,7 +7,7 @@ using ERP.Domain.SubEntity;
 
 namespace ERP.Dao.Nhibernate.Dao
 {
-    public class StateDaoNhibernate:BaseCrudDao<State>
+    public class StateDaoNhibernate : BaseCrudDao<State>
     {
 
     }

@@ -15,15 +15,10 @@ namespace ERP.Dao.Nhibernate.NUnit.Dao.Company
     {
         private CompanyDaoNhibernate CompanyDao = new CompanyDaoNhibernate();
 
-
         [TestFixtureSetUp]
         public void SetUpFixture()
         {
-            SetUpDatabase(
-                ConnectionString,
-                NDbunitUtilities.AssemblyResourceStream("Schema.DBSchema.xsd"),
-                NDbunitUtilities.AssemblyResourceStream("Dataset.Clean.data.xml"),
-                DbOperationFlag.CleanInsertIdentity);
+            SetUpDatabase(DbOperationFlag.CleanInsertIdentity);
         }
 
         public void SaveCompanyTestCase()

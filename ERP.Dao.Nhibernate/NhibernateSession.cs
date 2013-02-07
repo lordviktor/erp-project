@@ -41,7 +41,10 @@ namespace ERP.Dao.Nhibernate
 
                 var configuration = Fluently
                     .Configure()
-                    .Database(MySQLConfiguration.Standard.ConnectionString(connectionString).ShowSql())//SQLiteConfiguration.Standard.UsingFile("Teste.db")) //MySQLConfiguration.Standard.ConnectionString(connectionString))
+                    //.Database(MySQLConfiguration.Standard.ConnectionString(connectionString).ShowSql())
+                    .Database(MsSqlConfiguration.MsSql2008.ConnectionString(connectionString).ShowSql())
+                    //SQLiteConfiguration.Standard.UsingFile("Teste.db")) 
+                    //MySQLConfiguration.Standard.ConnectionString(connectionString))
                     .Mappings(x => x.FluentMappings.AddFromAssemblyOf<AddressMap>()
                         .Conventions
                             .AddFromAssemblyOf<TableNameConvention>())
@@ -54,9 +57,7 @@ namespace ERP.Dao.Nhibernate
                     )
                     .BuildConfiguration();
 
-                //BuildNHibernateConfig(connectionString, configuration);
-
-                //BuildEnversConfiguration(configuration);
+                BuildEnversConfiguration(configuration);
 
                 _sessionFactory = configuration.BuildSessionFactory();
 
@@ -67,24 +68,6 @@ namespace ERP.Dao.Nhibernate
             {
                 throw;
             }
-        }
-
-        private static void BuildNHibernateConfig(String connectionString, Configuration configuration)
-        {
-            configuration.SetProperty(NHibernate.Cfg.Environment.ShowSql, true.ToString());
-            configuration.SetProperty(NHibernate.Cfg.Environment.Hbm2ddlAuto, "update");
-            configuration.SetProperty(NHibernate.Cfg.Environment.ConnectionDriver,
-                                      typeof(NHibernate.Driver.MySqlDataDriver).FullName);
-            configuration.SetProperty(NHibernate.Cfg.Environment.ConnectionString, connectionString);
-            configuration.SetProperty(NHibernate.Cfg.Environment.Dialect,
-                                      typeof(NHibernate.Dialect.MySQLDialect).FullName);
-            configuration.SetProperty(NHibernate.Cfg.Environment.ProxyFactoryFactoryClass,
-                                      typeof(DefaultProxyFactoryFactory).AssemblyQualifiedName);
-            configuration.SetProperty(NHibernate.Cfg.Environment.UseProxyValidator, false.ToString());
-            //configuration.AddAssembly("ERP.Domain");
-            //configuration.AddAssembly("ERP.Dao.Nhibernate");
-
-            //Fluently.Configure(configuration).Mappings(m => m.FluentMappings.AddFromAssemblyOf<AddressMap>());
         }
 
         private static void BuildEnversConfiguration(Configuration configuration)

@@ -3,7 +3,7 @@
 using System;
 using System.IO;
 using NDbUnit.Core;
-using NDbUnit.Core.MySqlClient;
+using NDbUnit.Core.SqlClient;
 using NUnit.Framework;
 
 #endregion
@@ -12,28 +12,39 @@ namespace ERP.Dao.Nhibernate.NUnit.Util
 {
     public abstract class TestBase
     {
-        protected const string rootNamespace = "NDbUnitXPath";
+        public NhibernateSession NhibernateSession { get; set; }
 
         protected string ConnectionString
         {
             get { return Properties.Settings.Default.erpConnectionString; }
         }
 
+        protected virtual Stream DatabaseSchema
+        {
+            get { return NDbunitUtilities.AssemblyResourceStream("Schema.DatabaseSchema.xsd"); }
+        }
 
-        internal INDbUnitTest SetUpDatabase(string connectionString, Stream xsdStream, Stream dataStream,
-                                            DbOperationFlag operation)
+        protected INDbUnitTest SetUpDatabase(DbOperationFlag operation, Stream datasetStream = null)
+        {
+            Assert.IsNotNull(DatabaseSchema);
+
+            SetUpNhibernateSession();
+            
+            INDbUnitTest dbUnitTest = new SqlDbUnitTest(this.ConnectionString);
+            dbUnitTest.ReadXmlSchema(this.DatabaseSchema);
+            if(datasetStream != null) dbUnitTest.ReadXml(datasetStream);
+            
+            dbUnitTest.PerformDbOperation(operation);
+            
+            return dbUnitTest;
+        }
+
+        private void SetUpNhibernateSession()
         {
             NhibernateSession nhibernateSession = new NhibernateSession();
             nhibernateSession.BuildSession(Guid.NewGuid(), Properties.Settings.Default.erpConnectionString);
 
-            Assert.IsNotNull(xsdStream);
-            Assert.IsNotNull(dataStream);
-
-            INDbUnitTest dbUnitTest = new MySqlDbUnitTest(connectionString);
-            dbUnitTest.ReadXmlSchema(xsdStream);
-            dbUnitTest.ReadXml(dataStream);
-            dbUnitTest.PerformDbOperation(operation);
-            return dbUnitTest;
+            this.NhibernateSession = nhibernateSession;
         }
     }
 }
