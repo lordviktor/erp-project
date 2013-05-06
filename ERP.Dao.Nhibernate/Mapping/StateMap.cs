@@ -50,7 +50,7 @@ namespace ERP.Dao.Nhibernate.Mapping
         public StateMap()
         {
             Map(x => x.Name);
-
+            Map(x => x.Uf);
             HasMany<City>(x => x.Cities)
                 .Inverse()
                 .AsBag()

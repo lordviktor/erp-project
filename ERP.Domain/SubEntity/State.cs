@@ -12,6 +12,8 @@ namespace ERP.Domain.SubEntity
     {
         public String Name { get; set; }
 
+        public String Uf { get; set; }
+
         public IList<City> Cities { get; set; }
     }
 }
