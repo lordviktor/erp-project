@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DatabaseSchema xmlns="http://tempuri.org/DatabaseSchema.xsd">
+  <TB_STATE>
+    <NAME>Rio de Janeiro</NAME>
+  </TB_STATE>
+</DatabaseSchema>
