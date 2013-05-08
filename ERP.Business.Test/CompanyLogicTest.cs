@@ -61,6 +61,9 @@ namespace ERP.Business.Test
 
         #endregion
 
+        #region Update
+
+
         [TestMethod]
         public void UpdateEntityTestCase()
         {
@@ -82,13 +85,64 @@ namespace ERP.Business.Test
             target.Update(null);
         }
 
-        public void TryToUpdateNewEntity()
+        [TestMethod]
+        [ExpectedException(typeof(DatabaseOperationException), "O metodo update deve notificar problemas ao tenta atualizar a entidade no banco de dados")]
+        public void ErrorWhileTryToUpdateNewEntity()
         {
             Company company = new Company();
-            var target = new CompanyLogic(new StubICompanyDao());
+            var target = new CompanyLogic(new StubICompanyDao()
+                {
+                    UpdateCompany = (x) => { throw new DatabaseOperationException(); }
+                });
             target.Update(company);
         }
 
+    #endregion
 
+        #region Delete
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException), "O metodo delete não pode tentar deletar do banco um dado nulo.")]
+        public void TryToDeleteNullEntity()
+        {
+            Company company = null;
+            var companyLogic = new CompanyLogic(new StubICompanyDao());
+            
+            companyLogic.Delete(company);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException), "O metodo delete não pode tentar deletar do banco um dado já marcado como excluido.")]
+        public void TryToDeleteAlreadyDeletedEntity()
+        {
+            Company company = new Company() { Excluded = true };
+            var companyLogic = new CompanyLogic(new StubICompanyDao());
+            
+            companyLogic.Delete(company);
+        }
+        
+        [TestMethod]
+        public void DeleteEntityTestCase()
+        {
+            Company company = new Company();
+            var companyLogic = new CompanyLogic(new StubICompanyDao());
+            
+            companyLogic.Delete(company);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(DatabaseOperationException), "O metodo delete deve notificar problemas ao tenta deletar a entidade no banco de dados")]
+        public void ErrorWhileTryToDeleteEntity()
+        {
+            Company company = new Company();
+            var companyLogic = new CompanyLogic(new StubICompanyDao()
+            {
+                UpdateCompany = (x) => { throw new DatabaseOperationException(); }
+            });
+
+            companyLogic.Delete(company);
+        }
+
+        #endregion
     }
 }
