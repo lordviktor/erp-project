@@ -57,7 +57,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Base\BaseCrudTest.cs" />
+    <None Include="Base\BaseCrudTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CompanyLogicTest.cs" />
   </ItemGroup>
