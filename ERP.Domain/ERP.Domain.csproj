@@ -62,7 +62,6 @@
     <Compile Include="SubEntity\Person.cs" />
     <Compile Include="SubEntity\Phone.cs" />
     <Compile Include="SubEntity\State.cs" />
-    <Compile Include="Test.cs" />
     <Compile Include="Transporter.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Util\PaginatedInfo.cs" />
