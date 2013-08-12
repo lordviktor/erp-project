@@ -49,7 +49,6 @@
     <Compile Include="ICompanyDao.cs" />
     <Compile Include="INeighborhoodDao.cs" />
     <Compile Include="IStateDao.cs" />
-    <Compile Include="ITestDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
