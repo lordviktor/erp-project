@@ -48,8 +48,6 @@
     <Compile Include="Dao\Base\BaseDao.cs" />
     <Compile Include="Dao\Base\BaseLogicExclusionDao.cs" />
     <Compile Include="Dao\CompanyDaoMock.cs" />
-    <Compile Include="MockDaoFactory.cs" />
-    <Compile Include="Dao\TestDaoMock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
